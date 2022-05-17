@@ -10,3 +10,31 @@
   margin-right: 10%;
   margin-top: 20px;
 }
+
+.navbar-icon {
+  color: white;
+  font-size: 24px;
+  font-family: "Abril Fatface", cursive;
+}
+
+.navbar-link {
+  color: white;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 20px;
+  font-family: "Abril Fatface", cursive;
+}
+
+.navbar-button {
+  background-color: #121110;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: "Abril Fatface", cursive;
+}
+
+.developer-description-container {
+  margin-left: 10%;
+  margin-right: 10%;
+}

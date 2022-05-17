@@ -24,14 +24,14 @@ export default function HomePage() {
           <div className="navbar-icon">Daniel.</div>
 
           <div className="navbar-navigation-container">
-            <a className="navbar-button" href="#work-examples">
+            <a className="navbar-link" href="#work-examples">
               my work
             </a>
             <button className="navbar-button">get in touch</button>
           </div>
         </div>
 
-        <div>
+        <div className="developer-description-container">
           <h1>
             Hi, I'm Daniel, <span>Web Designer</span> and{" "}
             <span>Full Stack</span> Developer
