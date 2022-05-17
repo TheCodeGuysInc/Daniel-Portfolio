@@ -10,6 +10,8 @@ import {
 } from "react-router-dom";
 
 import HomePage from "./Pages/Home";
+import TeamApp from "./Pages/TeamApp";
+import ChatApp from "./Pages/ChatApp";
 
 function App() {
   return (
@@ -17,8 +19,8 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<HomePage />}></Route>
-          <Route path="/projects">{/* <Projects /> */}</Route>
-          <Route path="/about">{/* <About /> */}</Route>
+          <Route path="/chatApp" element={<ChatApp />}></Route>
+          <Route path="/teamApp" element={<TeamApp />}></Route>
         </Routes>
       </BrowserRouter>
     </>

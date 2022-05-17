@@ -1,7 +1,22 @@
 import React from "react";
 import "./Home.css";
+import { useNavigate } from "react-router-dom";
 
 export default function HomePage() {
+  const navigate = useNavigate();
+
+  function NavigateToChatApp() {
+    navigate("/chatApp");
+  }
+
+  function NavigateToTeamApp() {
+    navigate("/teamApp");
+  }
+
+  function NavigateToHome() {
+    navigate("/");
+  }
+
   return (
     <div className="page-container">
       <div className="introduction-section">
@@ -9,8 +24,10 @@ export default function HomePage() {
           <div className="navbar-icon">Daniel.</div>
 
           <div className="navbar-navigation-container">
-            <button>my work</button>
-            <button>get in touch</button>
+            <a className="navbar-button" href="#work-examples">
+              my work
+            </a>
+            <button className="navbar-button">get in touch</button>
           </div>
         </div>
 
@@ -27,12 +44,12 @@ export default function HomePage() {
           </p>
 
           <div>
-            <button>see my work</button>
+            <a href="#work-examples"> see my work</a>
           </div>
         </div>
       </div>
 
-      <div className="website-example">
+      <div id="work-examples" className="website-example">
         <div className="website-example-divider">
           <div className="website-example-text">
             <p>Latest Work</p>
@@ -51,7 +68,7 @@ export default function HomePage() {
             </p>
 
             <div>
-              <button>see this project</button>
+              <button onClick={NavigateToChatApp}>see this project</button>
             </div>
           </div>
 
@@ -76,11 +93,11 @@ export default function HomePage() {
             <p>
               A full website design and build for a concept team collaboration
               platform. This website also includes a beautiful blog. I have
-              build the website and the blog using Reacct.
+              built the website and the blog using React.
             </p>
 
             <div>
-              <button>see this project</button>
+              <button onClick={NavigateToTeamApp}>see this project</button>
             </div>
           </div>
 

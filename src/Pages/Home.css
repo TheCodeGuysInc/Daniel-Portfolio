@@ -1,0 +1,12 @@
+.introduction-section {
+  background-color: #121110;
+  margin: 20px;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 20px;
+}
