@@ -1,6 +1,10 @@
 import React from "react";
 import "./Home.css";
 import { useNavigate } from "react-router-dom";
+import ChatApp from "../Assets/Images/chatApp.png";
+import TeamApp from "../Assets/Images/teamApp.png";
+import ProjectButton from "../Assets/Images/project-button.png";
+import WorkButton from "../Assets/Images/work-button.png";
 
 export default function HomePage() {
   const navigate = useNavigate();
@@ -32,77 +36,101 @@ export default function HomePage() {
         </div>
 
         <div className="developer-description-container">
-          <h1>
-            Hi, I'm Daniel, <span>Web Designer</span> and{" "}
-            <span>Full Stack</span> Developer
-          </h1>
+          <p className="introduction-title">
+            Hi, I'm Daniel,{" "}
+            <span className="green-highlight">Web Designer</span> and{" "}
+            <span className="green-highlight-sm">Full Stack</span> Developer
+          </p>
 
-          <p>
+          <p className="introduction-description">
             I design and build beautiful websites for businesses around the
             globe. If you need a modern and powerful website, send me and email.
             If we are a good fit, I will give you a time and cost estimate.
           </p>
 
-          <div>
-            <a href="#work-examples"> see my work</a>
+          <div className="see-work-button-container">
+            <img
+              src={WorkButton}
+              alt="workButton.png"
+              className="website-project-button"
+            />
           </div>
+          <br />
         </div>
       </div>
 
       <div id="work-examples" className="website-example">
         <div className="website-example-divider">
-          <div className="website-example-text">
-            <p>Latest Work</p>
-            <h1>Chat App website</h1>
+          <div className="website-example-text-container">
+            <p className="website-example-heading">Latest Work</p>
+            <p className="website-example-title">Chat App website</p>
 
-            <div>
-              <p>Website Design</p>
-              <p>Full Stack Development</p>
-              <p>Concept</p>
+            <div className="website-example-boxes-container">
+              <p className="website-example-box">Website Design</p>
+              <p className="website-example-box">Full Stack Development</p>
+              <p className="website-example-box">Concept</p>
             </div>
 
-            <p>
+            <p className="website-example-description">
               This is a homepage design and build for a concept project - a chat
               application. I have deisnged the page first then later built a
               responsive webpage using React
             </p>
 
             <div>
-              <button onClick={NavigateToChatApp}>see this project</button>
+              <img
+                src={ProjectButton}
+                alt=""
+                onClick={NavigateToChatApp}
+                className="website-project-button"
+              />
             </div>
           </div>
 
-          <div className="website-example-image">
-            <img src="" alt="" />
+          <div className="website-example-image-container">
+            <img
+              src={ChatApp}
+              alt="chatApp.png"
+              className="website-example-image"
+            />
           </div>
         </div>
       </div>
 
       <div className="website-example">
         <div className="website-example-divider">
-          <div className="website-example-text">
-            <p>Latest Work</p>
-            <h1>Team website</h1>
+          <div className="website-example-text-container">
+            <p className="website-example-heading">Latest Work</p>
+            <p className="website-example-title">Team App website</p>
 
-            <div>
-              <p>Website Design</p>
-              <p>Full Stack Development</p>
-              <p>Concept</p>
+            <div className="website-example-boxes-container">
+              <p className="website-example-box">Website Design</p>
+              <p className="website-example-box">Full Stack Development</p>
+              <p className="website-example-box">Concept</p>
             </div>
 
-            <p>
+            <p className="website-example-description">
               A full website design and build for a concept team collaboration
               platform. This website also includes a beautiful blog. I have
               built the website and the blog using React.
             </p>
 
             <div>
-              <button onClick={NavigateToTeamApp}>see this project</button>
+              <img
+                src={ProjectButton}
+                alt=""
+                onClick={NavigateToTeamApp}
+                className="website-project-button"
+              />
             </div>
           </div>
 
           <div className="website-example-image">
-            <img src="" alt="" />
+            <img
+              src={TeamApp}
+              alt="teamApp.png"
+              className="website-example-image"
+            />
           </div>
         </div>
       </div>
