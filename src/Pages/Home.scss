@@ -26,8 +26,14 @@ $laptop-width-plus: $laptop-width + 1;
     margin-top: 20px;
     font-family: "Abril Fatface", cursive;
 
-    @media only screen and (min-width: $mobile-width-plus) {
+    @media only screen and (min-width: $mobile-width) and (max-width: $laptop-width) {
       margin-left: 50px;
+    }
+
+    @media only screen and (min-width: $laptop-width-plus) {
+      margin-top: 5%;
+      margin-left: 5%;
+      font-size: 24px;
     }
   }
 
@@ -35,8 +41,13 @@ $laptop-width-plus: $laptop-width + 1;
     margin-top: 20px;
     margin-right: 20px;
 
-    @media only screen and (min-width: $mobile-width-plus) {
+    @media only screen and (min-width: $mobile-width) and (max-width: $laptop-width) {
       margin-right: 50px;
+    }
+
+    @media only screen and (min-width: $laptop-width-plus) {
+      margin-top: 5%;
+      margin-right: 5%;
     }
   }
 
@@ -49,6 +60,10 @@ $laptop-width-plus: $laptop-width + 1;
     background-size: 50px 12px;
     background-position: 90% 80%;
     text-decoration: none;
+
+    @media only screen and (min-width: $laptop-width-plus) {
+      font-size: 18px;
+    }
   }
 
   .navbar-button {
@@ -60,6 +75,10 @@ $laptop-width-plus: $laptop-width + 1;
     background-repeat: no-repeat;
     background-size: 60px 12px;
     background-position: 90% 80%;
+
+    @media only screen and (min-width: $laptop-width-plus) {
+      font-size: 18px;
+    }
   }
 
   .introduction-title {
