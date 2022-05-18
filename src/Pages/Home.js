@@ -1,5 +1,5 @@
 import React from "react";
-import "./Home.css";
+import "./Home.scss";
 import { useNavigate } from "react-router-dom";
 import ChatApp from "../Assets/Images/chatApp.png";
 import TeamApp from "../Assets/Images/teamApp.png";
@@ -44,7 +44,7 @@ export default function HomePage() {
 
           <p className="introduction-description">
             I design and build beautiful websites for businesses around the
-            globe. If you need a modern and powerful website, send me and email.
+            globe. If you need a modern and powerful website, send me an email.
             If we are a good fit, I will give you a time and cost estimate.
           </p>
 
@@ -55,7 +55,6 @@ export default function HomePage() {
               className="website-project-button"
             />
           </div>
-          <br />
         </div>
       </div>
 
@@ -77,7 +76,7 @@ export default function HomePage() {
               responsive webpage using React
             </p>
 
-            <div>
+            <div className="website-example-image-container">
               <img
                 src={ProjectButton}
                 alt=""
@@ -115,7 +114,7 @@ export default function HomePage() {
               built the website and the blog using React.
             </p>
 
-            <div>
+            <div className="website-example-image-container">
               <img
                 src={ProjectButton}
                 alt=""
@@ -125,7 +124,7 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div className="website-example-image">
+          <div className="website-example-image-container">
             <img
               src={TeamApp}
               alt="teamApp.png"
@@ -136,15 +135,17 @@ export default function HomePage() {
       </div>
 
       <div className="about-me">
-        <div className="website-example-divider">
-          <div className="website-example-text">
-            <h1>What I do</h1>
+        <div className="about-me-divider">
+          <div className="about-me-text-container">
+            <p className="about-me-heading">
+              What <span className="highlight-span">I do</span>
+            </p>
           </div>
 
-          <div className="website-example-image">
+          <div className="about-me-image-container">
             <div>
               <h2>Design</h2>
-              <p>
+              <p className="about-me-description">
                 I design beautiful and powerful websites for modern businesses.
                 Any business today needs a website that wins customers trust and
                 helps you do your business well. I make sure your website up to
@@ -154,7 +155,7 @@ export default function HomePage() {
 
             <div>
               <h2>Development</h2>
-              <p>
+              <p className="about-me-description">
                 I build websites using best practices and up to date coding
                 standards. I create responsive, powerful and fully custom
                 websites using React, JavaScript, Html, CSS, and much more. I
@@ -166,19 +167,49 @@ export default function HomePage() {
         </div>
       </div>
 
-      <div className="footer">
+      <div id="desktop-footer" className="footer">
         <div className="footer-divider">
           <div className="footer-left-side">
-            <h1>Want to work?</h1>
+            <p className="footer-heading">
+              Want to <span className="footer-heading-span">work?</span>
+            </p>
 
-            <p>All rights reserved - Daniel Herrgott</p>
+            <p className="copyright-statement">
+              &copy; All rights reserved - Daniel Herrgott
+            </p>
           </div>
 
           <div className="footer-right-side">
-            <p>
+            <p className="footer-website-example-description">
               If you need a modern and powerful website for your business,
               startup or personally. I am available for work. You can email me
-              directly at codeguysdevelopment@gmail.com
+              directly at{" "}
+              <span className="footer-description-span">
+                codeguysdevelopment@gmail.com
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div id="mobile-footer" className="footer-mobile">
+        <div className="footer-divider">
+          <div className="footer-left-side">
+            <p className="footer-heading">
+              Want to <span className="footer-heading-span">work?</span>
+            </p>
+
+            <p className="footer-website-example-description">
+              If you need a modern and powerful website for your business,
+              startup or personally. I am available for work. You can email me
+              directly at{" "}
+              <span className="footer-description-span">
+                codeguysdevelopment@gmail.com
+              </span>
+            </p>
+
+            <p className="copyright-statement">
+              &copy; All rights reserved - Daniel Herrgott
             </p>
           </div>
         </div>
