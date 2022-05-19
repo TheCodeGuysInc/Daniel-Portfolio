@@ -76,7 +76,7 @@ export default function HomePage() {
               responsive webpage using React
             </p>
 
-            <div className="website-example-image-container">
+            <div className="website-example-text-button">
               <img
                 src={ProjectButton}
                 alt=""
@@ -114,7 +114,7 @@ export default function HomePage() {
               built the website and the blog using React.
             </p>
 
-            <div className="website-example-image-container">
+            <div className="website-example-text-button">
               <img
                 src={ProjectButton}
                 alt=""
