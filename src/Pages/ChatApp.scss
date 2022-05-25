@@ -7,7 +7,7 @@ $laptop-width-plus: $laptop-width + 1;
 $desktop-width: 1439px;
 $desktop-width-plus: $desktop-width + 1;
 
-.team-app-page-container {
+.chat-app-page-container {
   padding: 5px;
 
   @media only screen and (min-width: $mobile-width-plus) and (max-width: $laptop-width) {
@@ -19,15 +19,15 @@ $desktop-width-plus: $desktop-width + 1;
   }
 }
 
-.team-app-introduction-section {
+.chat-app-introduction-section {
   background-color: #121110;
 
-  .team-app-navbar-container {
+  .chat-app-navbar-container {
     display: flex;
     justify-content: space-between;
   }
 
-  .team-app-navbar-icon {
+  .chat-app-navbar-icon {
     color: white;
     margin-left: 20px;
     margin-top: 20px;
@@ -50,7 +50,7 @@ $desktop-width-plus: $desktop-width + 1;
     }
   }
 
-  .team-app-navbar-navigation-container {
+  .chat-app-navbar-navigation-container {
     margin-top: 20px;
     margin-right: 20px;
 
@@ -69,11 +69,11 @@ $desktop-width-plus: $desktop-width + 1;
     }
   }
 
-  .team-app-navbar-link {
+  .chat-app-navbar-link {
     margin-right: 20px;
     padding: 5px;
     color: white;
-    background: url("../Assets/Images/orange-rectangle.png");
+    background: url("../Assets/Images/blue-rectangle.png");
     background-repeat: no-repeat;
     background-size: 30px 7px;
     background-position: 90% 80%;
@@ -89,12 +89,12 @@ $desktop-width-plus: $desktop-width + 1;
     }
   }
 
-  .team-app-navbar-button {
+  .chat-app-navbar-button {
     padding: 5px;
     border: none;
     color: white;
     cursor: pointer;
-    background: url("../Assets/Images/orange-rectangle.png");
+    background: url("../Assets/Images/blue-rectangle.png");
     background-repeat: no-repeat;
     background-size: 60px 7px;
     background-position: 90% 80%;
@@ -109,7 +109,7 @@ $desktop-width-plus: $desktop-width + 1;
     }
   }
 
-  .team-app-developer-description-container {
+  .chat-app-developer-description-container {
     margin-left: 5%;
     margin-right: 5%;
 
@@ -121,7 +121,7 @@ $desktop-width-plus: $desktop-width + 1;
     }
   }
 
-  .team-app-introduction-heading {
+  .chat-app-introduction-heading {
     text-align: center;
     color: white;
     margin-top: 50px;
@@ -137,7 +137,7 @@ $desktop-width-plus: $desktop-width + 1;
     }
   }
 
-  .team-app-introduction-title {
+  .chat-app-introduction-title {
     color: white;
     font-family: "Abril Fatface", cursive;
     letter-spacing: 2px;
@@ -159,7 +159,7 @@ $desktop-width-plus: $desktop-width + 1;
     }
   }
 
-  .team-app-introduction-description {
+  .chat-app-introduction-description {
     padding: 10px;
     color: white;
     font-size: 18px;
@@ -180,35 +180,35 @@ $desktop-width-plus: $desktop-width + 1;
     }
   }
 
-  .team-app-visit-live-site-button-container {
+  .chat-app-visit-live-site-button-container {
     text-align: center;
     padding-bottom: 30px;
     margin-top: 50px;
   }
 
-  .team-app-visit-live-site-button {
+  .chat-app-visit-live-site-button {
     font-size: 18px;
     padding-right: 10px;
     border: none;
     color: white;
     cursor: pointer;
-    background: url("../Assets/Images/orange-rectangle.png");
+    background: url("../Assets/Images/blue-rectangle.png");
     background-repeat: no-repeat;
     background-size: 50px 10px;
     background-position: 90% 90%;
   }
 }
 
-.team-app-website-example {
+.chat-app-website-example {
   @media only screen and (min-width: $desktop-width-plus) {
   }
 
-  .team-app-website-example-divider {
+  .chat-app-website-example-divider {
     @media only screen and (min-width: $laptop-width-plus) {
     }
   }
 
-  .team-app-website-example-text-container {
+  .chat-app-website-example-text-container {
     @media only screen and (min-width: $laptop-width-plus) and (max-width: $desktop-width) {
     }
 
@@ -216,12 +216,12 @@ $desktop-width-plus: $desktop-width + 1;
     }
   }
 
-  .team-app-website-example-heading {
+  .chat-app-website-example-heading {
     @media only screen and (min-width: $laptop-width-plus) {
     }
   }
 
-  .team-app-website-image-container {
+  .chat-app-website-image-container {
     text-align: center;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -233,7 +233,7 @@ $desktop-width-plus: $desktop-width + 1;
     }
   }
 
-  .team-app-website-image {
+  .chat-app-website-image {
     width: 90%;
 
     @media only screen and (min-width: $mobile-width) and (max-width: $laptop-width) {
@@ -249,7 +249,7 @@ $desktop-width-plus: $desktop-width + 1;
   }
 }
 
-.team-app-footer {
+.chat-app-footer {
   @media only screen and (max-width: $laptop-width) {
     display: none;
   }
@@ -257,7 +257,7 @@ $desktop-width-plus: $desktop-width + 1;
   background-color: #121110;
   margin: 5px;
 
-  .team-app-footer-divider {
+  .chat-app-footer-divider {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -267,7 +267,7 @@ $desktop-width-plus: $desktop-width + 1;
     }
   }
 
-  .team-app-footer-left-side {
+  .chat-app-footer-left-side {
     @media only screen and (min-width: $laptop-width-plus) and (max-width: $desktop-width) {
       width: 100%;
       margin-left: 5%;
@@ -280,7 +280,7 @@ $desktop-width-plus: $desktop-width + 1;
     }
   }
 
-  .team-app-footer-heading {
+  .chat-app-footer-heading {
     font-family: "Abril Fatface", cursive;
     color: white;
     font-size: 32px;
@@ -298,15 +298,15 @@ $desktop-width-plus: $desktop-width + 1;
     }
   }
 
-  .team-app-footer-heading-span {
+  .chat-app-footer-heading-span {
     padding-right: 5px;
-    background: url("../Assets/Images/orange-rectangle.png");
+    background: url("../Assets/Images/blue-rectangle.png");
     background-repeat: no-repeat;
     background-size: 80px 20px;
     background-position: 82% 80%;
   }
 
-  .team-app-copyright-statement {
+  .chat-app-copyright-statement {
     color: white;
     margin-top: 50px;
     text-align: center;
@@ -324,7 +324,7 @@ $desktop-width-plus: $desktop-width + 1;
     }
   }
 
-  .team-app-footer-right-side {
+  .chat-app-footer-right-side {
     @media only screen and (min-width: $laptop-width-plus) and (max-width: $desktop-width) {
       width: 100%;
       margin-right: 5%;
@@ -336,7 +336,7 @@ $desktop-width-plus: $desktop-width + 1;
     }
   }
 
-  .team-app-footer-website-example-description {
+  .chat-app-footer-website-example-description {
     font-weight: 400;
     font-size: 18px;
     line-height: 30px;
@@ -357,23 +357,23 @@ $desktop-width-plus: $desktop-width + 1;
     }
   }
 
-  .team-app-footer-description-span {
+  .chat-app-footer-description-span {
     padding-right: 10px;
-    background: url("../Assets/Images/orange-rectangle.png");
+    background: url("../Assets/Images/blue-rectangle.png");
     background-repeat: no-repeat;
     background-size: 275px 10px;
     background-position: 90% 100%;
   }
 }
 
-.team-app-footer-mobile {
+.chat-app-footer-mobile {
   @media only screen and (min-width: $laptop-width-plus) {
     display: none;
   }
 
   background-color: #121110;
 
-  .team-app-footer-divider {
+  .chat-app-footer-divider {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -382,7 +382,7 @@ $desktop-width-plus: $desktop-width + 1;
   .footer-left-side {
   }
 
-  .team-app-footer-heading {
+  .chat-app-footer-heading {
     font-family: "Abril Fatface", cursive;
     color: white;
     font-size: 32px;
@@ -401,15 +401,15 @@ $desktop-width-plus: $desktop-width + 1;
     }
   }
 
-  .team-app-footer-heading-span {
+  .chat-app-footer-heading-span {
     padding-right: 5px;
-    background: url("../Assets/Images/orange-rectangle.png");
+    background: url("../Assets/Images/blue-rectangle.png");
     background-repeat: no-repeat;
     background-size: 80px 15px;
     background-position: 82% 90%;
   }
 
-  .team-app-footer-website-example-description {
+  .chat-app-footer-website-example-description {
     font-weight: 400;
     font-size: 18px;
     line-height: 30px;
@@ -422,15 +422,15 @@ $desktop-width-plus: $desktop-width + 1;
     margin-left: 5%;
   }
 
-  .team-app-footer-description-span {
+  .chat-app-footer-description-span {
     padding-right: 10px;
-    background: url("../Assets/Images/orange-rectangle.png");
+    background: url("../Assets/Images/blue-rectangle.png");
     background-repeat: no-repeat;
     background-size: 275px 10px;
     background-position: 100% 95%;
   }
 
-  .team-app-copyright-statement {
+  .chat-app-copyright-statement {
     color: white;
     margin-top: 50px;
     text-align: center;

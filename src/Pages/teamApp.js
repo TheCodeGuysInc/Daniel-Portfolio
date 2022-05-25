@@ -50,9 +50,9 @@ export default function TeamApp() {
 
       <div className="team-app-website-example">
         <div className="team-app-website-example-divider">
-          <div className="team-app-team-app-website-image-container">
+          <div className="team-app-website-image-container">
             <img
-              className="team-app-team-app-website-image"
+              className="team-app-website-image"
               src={TeamWebsite}
               alt="team-website.png"
             />
@@ -63,16 +63,24 @@ export default function TeamApp() {
       <div className="team-app-footer">
         <div className="team-app-footer-divider">
           <div className="team-app-footer-left-side">
-            <h1>Want to work?</h1>
+            <p className="team-app-footer-heading">
+              Want to{" "}
+              <span className="team-app-footer-heading-span">work?</span>
+            </p>
 
-            <p>All rights reserved - Daniel Herrgott</p>
+            <p className="team-app-copyright-statement">
+              &copy; All rights reserved - Daniel Herrgott
+            </p>
           </div>
 
           <div className="team-app-footer-right-side">
-            <p>
+            <p className="team-app-footer-website-example-description">
               If you need a modern and powerful website for your business,
               startup or personally. I am available for work. You can email me
-              directly at codeguysdevelopment@gmail.com
+              directly at{" "}
+              <span className="team-app-footer-description-span">
+                codeguysdevelopment@gmail.com
+              </span>
             </p>
           </div>
         </div>
